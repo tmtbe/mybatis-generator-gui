@@ -89,6 +89,10 @@ public class MainUIController extends BaseFXController {
     @FXML
     private CheckBox useActualColumnNamesCheckbox;
     @FXML
+    private CheckBox groupByCheckBox;
+    @FXML
+    private CheckBox selectByCheckBox;
+    @FXML
     private CheckBox useExample;
     @FXML
     private CheckBox useDAOExtendStyle;
@@ -346,6 +350,8 @@ public class MainUIController extends BaseFXController {
         generatorConfig.setNeedForUpdate(forUpdateCheckBox.isSelected());
         generatorConfig.setAnnotationDAO(annotationDAOCheckBox.isSelected());
         generatorConfig.setAnnotation(annotationCheckBox.isSelected());
+        generatorConfig.setGroupBy(groupByCheckBox.isSelected());
+        generatorConfig.setSelectBy(selectByCheckBox.isSelected());
         generatorConfig.setUseActualColumnNames(useActualColumnNamesCheckbox.isSelected());
         generatorConfig.setEncoding(encodingChoice.getValue());
         generatorConfig.setUseExample(useExample.isSelected());

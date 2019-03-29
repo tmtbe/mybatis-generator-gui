@@ -38,6 +38,10 @@ public class GeneratorConfig {
 
 	private boolean offsetLimit;
 
+	private boolean groupBy;
+
+	private boolean selectBy;
+
 	private boolean comment;
 
 	private boolean overrideXML;
@@ -284,5 +288,21 @@ public class GeneratorConfig {
 
 	public boolean isUseDAOExtendStyle() {
 		return useDAOExtendStyle;
+	}
+
+	public boolean isGroupBy() {
+		return groupBy;
+	}
+
+	public void setGroupBy(boolean groupBy) {
+		this.groupBy = groupBy;
+	}
+
+	public boolean isSelectBy() {
+		return selectBy;
+	}
+
+	public void setSelectBy(boolean selectBy) {
+		this.selectBy = selectBy;
 	}
 }

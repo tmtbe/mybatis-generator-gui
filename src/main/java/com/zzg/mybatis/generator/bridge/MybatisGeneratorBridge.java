@@ -204,6 +204,26 @@ public class MybatisGeneratorBridge {
                 context.addPluginConfiguration(pluginConfiguration);
             }
         }
+        // groupBy插件
+        if (generatorConfig.isGroupBy()) {
+            if (DbType.MySQL.name().equals(dbType)
+                    || DbType.PostgreSQL.name().equals(dbType)) {
+                PluginConfiguration pluginConfiguration = new PluginConfiguration();
+                pluginConfiguration.addProperty("type", "com.zzg.mybatis.generator.plugins.MySQLGroupByPlugin");
+                pluginConfiguration.setConfigurationType("com.zzg.mybatis.generator.plugins.MySQLGroupByPlugin");
+                context.addPluginConfiguration(pluginConfiguration);
+            }
+        }
+        // groupBy插件
+        if (generatorConfig.isSelectBy()) {
+            if (DbType.MySQL.name().equals(dbType)
+                    || DbType.PostgreSQL.name().equals(dbType)) {
+                PluginConfiguration pluginConfiguration = new PluginConfiguration();
+                pluginConfiguration.addProperty("type", "com.zzg.mybatis.generator.plugins.MySQLSelectByPlugin");
+                pluginConfiguration.setConfigurationType("com.zzg.mybatis.generator.plugins.MySQLSelectByPlugin");
+                context.addPluginConfiguration(pluginConfiguration);
+            }
+        }
         //for JSR310
         if (generatorConfig.isJsr310Support()) {
             JavaTypeResolverConfiguration javaTypeResolverConfiguration = new JavaTypeResolverConfiguration();

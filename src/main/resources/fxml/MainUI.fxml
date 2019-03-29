@@ -230,6 +230,14 @@
                                            <CheckBox fx:id="useExample" mnemonicParsing="false" selected="true" text="使用Example" />
                                        </children>
                                     </HBox>
+                                     <HBox spacing="18.0">
+                                         <children>
+                                             <CheckBox fx:id="groupByCheckBox" mnemonicParsing="false" selected="true" text="GroupBy" />
+                                         </children>
+                                         <children>
+                                             <CheckBox fx:id="selectByCheckBox" mnemonicParsing="false" selected="true" text="SelectBy" />
+                                         </children>
+                                     </HBox>
                                      <HBox prefHeight="100.0" prefWidth="200.0" />
                                  </children>
                                  <padding>
