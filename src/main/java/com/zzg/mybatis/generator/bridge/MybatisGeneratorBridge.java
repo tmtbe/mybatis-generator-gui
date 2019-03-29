@@ -214,7 +214,7 @@ public class MybatisGeneratorBridge {
                 context.addPluginConfiguration(pluginConfiguration);
             }
         }
-        // groupBy插件
+        // selectBy插件
         if (generatorConfig.isSelectBy()) {
             if (DbType.MySQL.name().equals(dbType)
                     || DbType.PostgreSQL.name().equals(dbType)) {

@@ -72,8 +72,6 @@ public class MySQLSelectByPlugin extends PluginAdapter {
         XmlElement ifSelectByNotNullElement = new XmlElement("if");
         ifSelectByNotNullElement.addAttribute(new Attribute("test", "selectByClause != null"));
         ifSelectByNotNullElement.addElement(new TextElement("${selectByClause}"));
-
-
         XmlElement ifSelectByNullElement = new XmlElement("if");
         ifSelectByNullElement.addAttribute(new Attribute("test", "selectByClause == null"));
         ifSelectByNullElement.addElement(element.getElements().get(2));
