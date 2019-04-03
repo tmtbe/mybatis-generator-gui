@@ -34,10 +34,4 @@ public class LombokPlugin extends PluginAdapter {
         return true;
     }
 
-    @Override
-    public boolean modelExampleClassGenerated(TopLevelClass topLevelClass, IntrospectedTable introspectedTable) {
-        topLevelClass.addImportedType(annotationRepository);
-        topLevelClass.addAnnotation(annotation);
-        return true;
-    }
 }
