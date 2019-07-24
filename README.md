@@ -14,9 +14,6 @@ mybatis-generator-gui是基于[mybatis generator](http://www.mybatis.org/generat
 ### 要求
 本工具由于使用了Java 8的众多特性，所以要求JDK <strong>1.8.0.60</strong>以上版本，另外<strong>JDK 1.9</strong>暂时还不支持。
 
-### 下载
-你可以从本链接下载本工具: https://github.com/astarring/mybatis-generator-gui/releases
-
 ### 启动本软件
 
 * 方法一: 自助构建
